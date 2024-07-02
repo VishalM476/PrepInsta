@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5; 
+
+.instagram-logo {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); /* Instagram gradient colors */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.camera {
+  width: 60%;
+  height: 60%;
+  background-color: #fff; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.lens {
+  width: 70%;
+  height: 70%;
+  background-color: #000; 
+  border-radius: 50%;
+  position: relative;
+}
+
+.lens::before {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 30%;
+  background-color: #fff; 
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
